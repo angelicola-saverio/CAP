@@ -29,17 +29,17 @@ public class SqlServerStorageInitializer : IStorageInitializer
 
     public virtual string GetPublishedTableName()
     {
-        return $"{_options.Value.Schema}.Published";
+        return $"{_options.Value.Schema}.{_options.Value.PublishedTableName}";
     }
 
     public virtual string GetReceivedTableName()
     {
-        return $"{_options.Value.Schema}.Received";
+        return $"{_options.Value.Schema}.{_options.Value.ReceivedTableName}";
     }
 
     public virtual string GetLockTableName()
     {
-        return $"{_options.Value.Schema}.Lock";
+        return $"{_options.Value.Schema}.{_options.Value.LockTableName}";
     }
 
     public async Task InitializeAsync(CancellationToken cancellationToken)
