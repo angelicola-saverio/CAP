@@ -31,17 +31,17 @@ public class MySqlStorageInitializer : IStorageInitializer
 
     public virtual string GetPublishedTableName()
     {
-        return $"{_options.Value.TableNamePrefix}.published";
+        return $"{_options.Value.TableNamePrefix}.{_options.Value.PublishedTableName}";
     }
 
     public virtual string GetReceivedTableName()
     {
-        return $"{_options.Value.TableNamePrefix}.received";
+        return $"{_options.Value.TableNamePrefix}.{_options.Value.ReceivedTableName}";
     }
 
     public virtual string GetLockTableName()
     {
-        return $"{_options.Value.TableNamePrefix}.lock";
+        return $"{_options.Value.TableNamePrefix}.{_options.Value.LockTableName}";
     }
 
     public async Task InitializeAsync(CancellationToken cancellationToken)
