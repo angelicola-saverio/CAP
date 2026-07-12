@@ -28,17 +28,17 @@ public class PostgreSqlStorageInitializer : IStorageInitializer
 
     public virtual string GetPublishedTableName()
     {
-        return $"\"{_options.Value.Schema}\".\"published\"";
+        return $"\"{_options.Value.Schema}\".\"{_options.Value.PublishedTableName}\"";
     }
 
     public virtual string GetReceivedTableName()
     {
-        return $"\"{_options.Value.Schema}\".\"received\"";
+        return $"\"{_options.Value.Schema}\".\"{_options.Value.ReceivedTableName}\"";
     }
 
     public virtual string GetLockTableName()
     {
-        return $"\"{_options.Value.Schema}\".\"lock\"";
+        return $"\"{_options.Value.Schema}\".\"{_options.Value.LockTableName}\"";
     }
 
     public async Task InitializeAsync(CancellationToken cancellationToken)

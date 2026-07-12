@@ -9,12 +9,34 @@ namespace DotNetCore.CAP;
 public class EFOptions
 {
     public const string DefaultSchema = "cap";
+    
+    public const string DefaultPublishedTableName = "published";
+    public const string DefaultReceivedTableName = "received";
+    public const string DefaultLockTableName = "lock";
 
     /// <summary>
     /// Gets or sets the schema to use when creating database objects.
     /// Default is <see cref="DefaultSchema" />.
     /// </summary>
     public string Schema { get; set; } = DefaultSchema;
+    
+    /// <summary>
+    /// Gets or sets the schema to use when creating published table.
+    /// Default is <see cref="DefaultPublishedTableName" />.
+    /// </summary>
+    public string PublishedTableName { get; set; } = DefaultPublishedTableName;
+    
+    /// <summary>
+    /// Gets or sets the schema to use when creating received table.
+    /// Default is <see cref="DefaultReceivedTableName" />.
+    /// </summary>
+    public string ReceivedTableName { get; set; } = DefaultReceivedTableName;
+    
+    /// <summary>
+    /// Gets or sets the schema to use when creating lock table.
+    /// Default is <see cref="DefaultLockTableName" />.
+    /// </summary>
+    public string LockTableName { get; set; } = DefaultLockTableName;
 
     internal Type? DbContextType { get; set; }
 
