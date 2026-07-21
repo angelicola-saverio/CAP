@@ -88,6 +88,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCore.CAP.Dashboard.K8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore.CAP.SqlServer.Test", "test\DotNetCore.CAP.SqlServer.Test\DotNetCore.CAP.SqlServer.Test.csproj", "{9532FB71-663B-4C7F-87C8-7516914B76E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore.CAP.PostgreSql.Test", "test\DotNetCore.CAP.PostgreSql.Test\DotNetCore.CAP.PostgreSql.Test.csproj", "{E9C3B9C1-8158-4A73-80A3-A584B1559124}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -218,6 +220,10 @@ Global
 		{9532FB71-663B-4C7F-87C8-7516914B76E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9532FB71-663B-4C7F-87C8-7516914B76E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9532FB71-663B-4C7F-87C8-7516914B76E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9C3B9C1-8158-4A73-80A3-A584B1559124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9C3B9C1-8158-4A73-80A3-A584B1559124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9C3B9C1-8158-4A73-80A3-A584B1559124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9C3B9C1-8158-4A73-80A3-A584B1559124}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -254,6 +260,7 @@ Global
 		{F739A8C9-565F-4B1D-8F91-FEE056C03FBD} = {3A6B6931-A123-477A-9469-8B468B5385AF}
 		{48655118-CEC3-4BD9-B510-64C1195C2729} = {9B2AE124-6636-4DE9-83A3-70360DABD0C4}
 		{9532FB71-663B-4C7F-87C8-7516914B76E4} = {C09CDAB0-6DD4-46E9-B7F3-3EF2A4741EA0}
+		{E9C3B9C1-8158-4A73-80A3-A584B1559124} = {C09CDAB0-6DD4-46E9-B7F3-3EF2A4741EA0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2E70565D-94CF-40B4-BFE1-AC18D5F736AB}
